@@ -1,15 +1,15 @@
 # File name: main.py
 
-<Widgets>:
+<Button>:
+    font_size: 40
+    color: 0,1,0,1
+    size_hint: 0.3, 0.2
+
+<FloatLayout>:
     Button:
-        size: 100,75
-        pos: 0,0
         text: "Kivy"
-        color: 0,1,0,1
-        font_size: 40
+        pos_hint: {"x": 0, "top": 1}
+
     Button:
-        size: 170,75
-        pos: 100,0
         text: "Tutorials"
-        color: 0,1,0,1
-        font_size: 40
+        pos_hint: {"right": 1, "top": 1}

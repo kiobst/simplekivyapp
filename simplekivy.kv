@@ -18,9 +18,16 @@ ScreenManagement:
     FloatLayout:
         Painter
         Button:
-            color: 0,1,0,1
+            color: 0,1,1,1
             font_size: 25
             size_hint: 0.3,0.2
             text: "Back Home"
             on_release: app.root.current = "main"
             pos_hint: {"right":1, "top":1}
+        Button:
+            color: 1,0,0,1
+            font_size: 25
+            size_hint: 0.3,0.2
+            text: "Clear"
+            on_release: self.parent.children[2].canvas.clear()
+            pos_hint: {"x":0, "y":0}
